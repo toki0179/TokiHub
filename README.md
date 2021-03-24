@@ -1,5 +1,4 @@
 # TokiHub Website Source
-![Toki0179](/img/favicon.png)
 - Website: [toki.gq](https://toki.gq/)
 
 ### Features
