@@ -1,5 +1,5 @@
 # TokiHub Website Source
-[![Toki0179](https://github.com/toki0179/tokihub/blob/main/img/favicon.png?raw=true)](https://github.com/toki0179)
+![Toki0179](/img/favicon.png)
 - Website: [toki.gq](https://toki.gq/)
 
 ### Features
@@ -15,3 +15,6 @@
 ### Information
 - This website has been developed with tailwindcss
 - Made by [toki0179](https://github.com/toki0179/)
+
+### Website Screenshot
+![TokiHub](/img/website.png)
