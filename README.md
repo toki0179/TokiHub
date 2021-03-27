@@ -4,7 +4,7 @@
 ### Features
 - [x] Modern Design
 - [x] Mobile User Friendly
-- [x] Dark Mode
+- [ ] Dark Mode
 
 ### How to use
 - Make sure you have nodejs installed
