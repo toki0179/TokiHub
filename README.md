@@ -7,6 +7,7 @@
 - [x] Dark Mode
 
 ### How to use
+- Make sure you have nodejs installed
 - Download the website files using `git clone https://github.com/toki0179/tokihub/`
 - Run `npm i` and `npm run build-css`
 - Upload the website files to a website hosting service of your choice
