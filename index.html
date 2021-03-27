@@ -1,7 +1,7 @@
 <html lang="en">
 <head>
     <meta id="embed-title" property="og:title" content="TokiHub">
-    <meta id="embed-desc" property="og:description" content="Cool stuff on this website!">
+    <meta id="embed-desc" property="og:description" content="TokiHub | Home">
     <meta id="discord" name="twitter:image" content="https://i.pinimg.com/originals/0a/77/ae/0a77ae49acc9541d6a65b09df77a180f.jpg">
     <meta name="theme-color" content="#2FECCD">
     
@@ -11,23 +11,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TokiHub | Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 </head>
-<body class="bg-cover bg-fixed" style="background-image: url(img/background.jpg)">
+<body x-data="{ showModal1: false}" :class="{'overflow-y-hidden': showModal1}" class="bg-cover bg-fixed" style="background-image: url(img/background.jpg)">
     <div class="flex h-screen justify-center items-center">
         <div class="text-center shadow-lg rounded-lg bg-white">
             <h1 class="p-3 text-3xl">TokiHub</h1>
+            <p1 class="p-3">
+                Welcome to my website enjoy looking at all my projects!
+            </p1>
             <div class="divide-y-2 divide-gray-500 divide-dashed md:divide-solid">
                 <p2>Made By</p2>
                 <br>
                 <p2>Toki0179</p2>
             </div>
             <div class="p-3">
-                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded opacity-50 cursor-not-allowed">Discord</button>
-                <button href="https://github.com/Toki0179" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <button href="https://github.com/Toki0179" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded" @click="showModal1=true">Projects</button>
+                <button href="https://github.com/Toki0179" class="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">
                 <a href="https://github.com/toki0179">GitHub</a>
                 </button>
             </div>
         </div>
       </div>
+      <div
+      class="fixed inset-0 w-full h-full z-20 bg-black bg-opacity-50 duration-300 overflow-y-auto"
+      x-show="showModal1"
+      x-transition:enter="transition duration-300"
+      x-transition:enter-start="opacity-0"
+      x-transition:enter-end="opacity-100"
+      x-transition:leave="transition duration-300"
+      x-transition:leave-start="opacity-100"
+      x-transition:leave-end="opacity-0"
+    >
+      <div class="relative sm:w-3/4 md:w-1/2 lg:w-1/3 mx-2 sm:mx-auto my-10 opacity-100">
+        <div
+          class="relative bg-white shadow-lg rounded-md text-gray-900 z-20"
+          @click.away="showModal1 = false"
+          x-show="showModal1"
+          x-transition:enter="transition transform duration-300"
+          x-transition:enter-start="scale-0"
+          x-transition:enter-end="scale-100"
+          x-transition:leave="transition transform duration-300"
+          x-transition:leave-start="scale-100"
+          x-transition:leave-end="scale-0"
+        >
+          <header class="flex items-center justify-between p-2">
+            <h2 class="font-semibold underline">Projects</h2>
+            <button class="focus:outline-none p-2" @click="showModal1 = false">
+              <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                <path
+                  d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
+                ></path>
+              </svg>
+            </button>
+          </header>
+          <main class="p-2 text-center">
+            <p>
+                You can contact me on discord at: toki#0999 <br>
+                I am the developer of a discord bot called TokiBot, but the bot is far from done!<br>
+                Another project I have made is mcstatus bot for discord! <br>
+                You can also view the website source by clicking the source button!
+            </p>
+          </main>
+          <footer class="flex justify-center p-2">
+              <div class="p-3">
+            <button class="bg-blue-600 font-semibold text-white p-2 w-32 rounded-full hover:bg-blue-800 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300">
+                <a href="https://github.com/toki0179/tokihub">Source</a>
+            </button>
+            <button class="bg-green-600 font-semibold text-white p-2 w-32 rounded-full hover:bg-green-800 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300">
+                <a href="https://github.com/toki0179/tokibot">TokiBot</a>
+            </button>
+            <button class="bg-green-600 font-semibold text-white p-2 w-32 rounded-full hover:bg-green-800 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300">
+                <a href="https://github.com/toki0179/mcstatus-discord">MCStatus</a>
+            </button>
+            <button
+              class="bg-red-600 font-semibold text-white p-2 w-32 rounded-full hover:bg-red-800 focus:outline-none focus:ring shadow-lg hover:shadow-none transition-all duration-300"
+              @click="showModal1 = false"
+            >
+              Go back
+            </button>
+              </div>
+          </footer>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
