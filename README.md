@@ -16,4 +16,4 @@
 - Made by [toki0179](https://github.com/toki0179/)
 
 ### Website Screenshot
-![TokiHub](/img/website.png)
+![TokiHub](/img/screenshot.png)
