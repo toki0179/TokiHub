@@ -3,8 +3,8 @@
 
 ### Features
 - [x] Modern Design
-- [x] Mobile User Friendly
-- [x] Dark Mode
+- [X] Mobile User Friendly
+- [ ] Dark Mode
 
 ### How to use
 - Download the website files using `git clone https://github.com/toki0179/tokihub/`
