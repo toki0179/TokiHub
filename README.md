@@ -3,7 +3,7 @@
 
 ### Features
 - [x] Modern Design
-- [x] Mobile User Friendly
+- [ ] Mobile User Friendly (needs to be updated a small bit to make look nicer on mobile)
 - [ ] Dark Mode
 
 ### How to use
