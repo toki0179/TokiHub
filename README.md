@@ -1,5 +1,5 @@
 # TokiHub Website Source
-- Website: [toki.gq](https://toki.gq/)
+- Website: [tokihub.xyz](https://tokihub.xyz/)
 
 ### Features
 - [x] Modern Design
